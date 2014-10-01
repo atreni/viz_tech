@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <header class=“mast-head” id=“mast-head”></header>
+	<title>Treni Assignment 1</title>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="container">
+		<div class="canvas"></div>
+		<div class="tooltip"></div>
+		<div class="dev-log">
+            <h1>This is a heading.</h1></div>
+		<div class="controls">
+            <!--include interactive elements here-->
+
+            <div class = "box">
+                <a href ="#" class = "button" id = "button1">Button 1</a>
+                <a href ="#" class = "button" id = "button2">Button 2</a></div>
+            <!--check box-->
+            <div class = "box">
+                <input type="checkbox" id="check-box"></input>
+            <!--radio button-->
+            <form id = "radio-button">
+                <input type="radio" name="boolean" value="True">True<br>
+                <input type="radio" name="boolean" value="False">False
+            </form></div>
+            <!--link-->
+            <div class = "box">
+                <a href ="http://www.merriam-webster.com/dictionary/stuff" id ="link">More Stuff »</a></div>
+            <!--text box-->
+            <div class = "box">
+                <form>
+                Favorite fruit: <input type="text" name="produce" class = "text-box" id = "fruit"><br>
+                Favorite vegetable: <input type="text" name="produce" class = "text-box" id = "vegetables"><br>
+                <input type="submit" value="Submit"></div>
+             <!-- Was told that all these inputs should be inside one FORM tab, but I
+                don't undestand the logic there, therefore - so you can see how I think about it,
+                I'm leaving it as is. Would love to discuss this in class! Thanks-->
+            </form>
+		</div>
+	</div>
+
+
+	<script src="script/lib/jquery/jquery-1.11.1.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+html,body,div,h1,h2,h3,h4,h5,ul,li,a,form{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background: powderblue;
+    height: 100%;
+	font-family:Helvetica,Arial,sans-serif;
+    font-size: 14px;
+
+}
+
+.container {
+    /*height: 100%; do I need this again?*/
+    width: 800px;
+    margin: 0 auto;
+    /*position: relative;?*/
+}
+
+.container .canvas {
+    background: #ffa07a;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*#mast-head{
+    font-size: 20px;
+    width: 800px;
+    text-align: center;
+}*/
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+.container .tooltip{
+    background: oldlace;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    visibility: hidden;
+    /*Call in JS for an action on hover?*/
+
+}
+
+.container .dev-log{
+    background: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100px;
+}
+/* dont need to do anything with dev-log just yet*/
+
+
+/*styling for interactive elements*/
+
+.container .controls {
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    background: lemonchiffon;
+    bottom: 100px;
+    margins: 0 auto;
+    left: 10%;
+}
+
+
+.container .controls .button{
+    display: block;
+    background: floralwhite;
+    width: 100px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    /*text-align only does horizontally*/
+    line-height: 80px;
+    text-decoration: none;
+    }
+
+.container .controls .box{
+    float:left;
+    width: 20%;
+    position: relative;
+    margin 0 auto;
+}
+
+.container .controls .box #link{
+    line-height: 80px;
+}
+
+
+/*This is all my old attempts. I learned that you can't style
+individual buttons, you have to style the containers they are in. I
+made a div and added it to each style, and called it class = "box"
+
+.controls .button #radio-button{
+    font-size: 80%;
+    color: lightpink;
+    float: inherit;
+}
+
+test button looking at API documenation. Do I need this?
+.controls .button #check-box{
+    color: gold;
+    background: hotpink;
+    position: relative;
+}
+
+.controls #text-box{
+    color: darkcyan;
+    /*width: 300px;
+
+.controls #link{
+    font-style: italic;
+    color: maroon;
+    width: 300px;
+    padding: 5px;
+    position: relative;
+    left: 30%;
+}*/
